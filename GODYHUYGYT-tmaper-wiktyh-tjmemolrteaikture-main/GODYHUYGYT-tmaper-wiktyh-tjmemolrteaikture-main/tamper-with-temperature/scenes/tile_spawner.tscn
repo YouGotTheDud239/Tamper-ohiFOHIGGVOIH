@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://qdelashlwxme"]
+
+[ext_resource type="Script" uid="uid://c3bqd4vgl3cuw" path="res://scripts/tile_spawn.gd" id="1_6rjkt"]
+
+[node name="TileSpawner" type="Node2D"]
+script = ExtResource("1_6rjkt")
