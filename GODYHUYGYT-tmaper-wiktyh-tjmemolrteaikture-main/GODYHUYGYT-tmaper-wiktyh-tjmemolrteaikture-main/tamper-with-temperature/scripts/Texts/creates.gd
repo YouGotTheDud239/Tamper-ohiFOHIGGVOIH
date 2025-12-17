@@ -4,9 +4,7 @@ extends Label
 @onready var tile_spawner: Node2D = %TileSpawner
 @onready var game: Node2D = $"../.."
 
-var createsTemp = tile_spawner.id_tile[int(str(mouse_select.xpos)+str(mouse_select.ypos))]
 
 func _process(float)->void:
-	createsTemp = tile_spawner.id_tile[int(str(mouse_select.xpos)+str(mouse_select.ypos))]
 	
-	text = "Temperature Made: " + str(createsTemp) + "° C"
+	text = "Temperature Made: " + str(tile_spawner.id_tile[int(str(mouse_select.xpos)+str(mouse_select.ypos))].createsTemp) + "° C"

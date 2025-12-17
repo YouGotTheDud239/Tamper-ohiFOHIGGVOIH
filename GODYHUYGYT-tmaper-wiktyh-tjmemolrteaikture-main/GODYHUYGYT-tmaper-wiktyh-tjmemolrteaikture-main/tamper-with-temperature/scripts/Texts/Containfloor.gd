@@ -1,10 +1,10 @@
 extends Label
 
+@onready var mouse_select: CharacterBody2D = %"Mouse Select"
+@onready var tile_spawner: Node2D = %TileSpawner
 @onready var game: Node2D = $"../.."
 
-var winReq
 
 func _process(float)->void:
-	winReq = game.winReq
 	
-	text = "Win Requirement: " + str(winReq) + "° C"
+	text = "Temperature Made: " + str(tile_spawner.id_tile[int(str(mouse_select.xpos)+str(mouse_select.ypos))].diffuseAmount) + "° C"

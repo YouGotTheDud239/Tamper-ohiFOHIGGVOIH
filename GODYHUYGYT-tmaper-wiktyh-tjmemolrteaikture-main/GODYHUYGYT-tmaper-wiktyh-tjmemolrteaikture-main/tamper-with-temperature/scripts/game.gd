@@ -1,4 +1,6 @@
 extends Node
+const TILE = preload("uid://dbednje38fjcg")
+
 
 @onready var tile_spawner: Node2D = $TileSpawner
 @onready var mouse_select: CharacterBody2D = $"Mouse Select"
@@ -8,10 +10,13 @@ extends Node
 @export var winTilex : int
 @export var winTiley : int
 
+
 var numonmouse: int = 0
 
 func _ready():
-	pass
+	await wait(2)
+
+
 
 func _process(float)->void:
 	numonmouse = int(str(mouse_select.xpos)+str(mouse_select.ypos))

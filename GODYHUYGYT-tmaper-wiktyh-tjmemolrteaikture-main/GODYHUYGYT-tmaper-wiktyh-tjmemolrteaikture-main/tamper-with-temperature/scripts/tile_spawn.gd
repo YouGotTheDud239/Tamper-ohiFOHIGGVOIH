@@ -11,7 +11,7 @@ func _ready():
 			var tilesy = tileff.instantiate()
 			tilesy.setpos((x-4.5)*32,(y-4.5)*32)
 			tilesy.tileCLASS.xy = Vector2i(n2inx, ninx)
-			get_parent().get_node("tile_handler").add_child(tilesy)
+			get_parent().get_node("TileSpawner").add_child(tilesy)
 			id_tile.append(tilesy)
 			y += 1
 		x += 1

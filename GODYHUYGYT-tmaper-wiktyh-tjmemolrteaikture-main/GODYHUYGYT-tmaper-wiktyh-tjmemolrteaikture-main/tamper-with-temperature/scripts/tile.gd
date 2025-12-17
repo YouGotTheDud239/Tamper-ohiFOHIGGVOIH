@@ -1,4 +1,6 @@
 extends CharacterBody2D
+
+
 @onready var tile_spawner: Node2D = %TileSpawner
 @onready var mouse_select: CharacterBody2D = %"Mouse Select"
 
@@ -14,20 +16,25 @@ extends CharacterBody2D
 @export var DifDown: bool 
 @export var DifLeft: bool 
 @export var DifRight: bool 
+
+@export var DifUpNum: float 
+@export var DifDownNum: float 
+@export var DifLeftNum: float 
+@export var DifRightNum: float 
+
 @export var numTiles: float
 
 @export var createsTemp : float
-@export var diffuseAmount: float
+@export var diffuseAmount: float = 1.0
+
 
 var xy = [-144,-144]
 var xpos
 var ypos
-var id_tile
 
 func _ready():
 	startup_crap()
 	diffuse()
-
 
 func _process(float)->void:
 	self.position = Vector2(xy[0], xy[1])
@@ -66,30 +73,41 @@ func get_color():
 func diffuseCheck():
 	if int(ypos) + -1 < -5:
 		DifUp = false
+		DifUpNum = 0
 		temp = 21111
 	else:
 		DifUp = true
+		DifUpNum = get_parent().id_tile[int(str(xpos)+str(ypos-1))].temp 
 		numTiles += 1
 	if int(ypos) + 1 > 4:
 		DifDown = false
+		DifDownNum = 0
 		temp = 2222
 	else:
 		DifDown = true
+		DifDownNum = get_parent().id_tile[int(str(xpos)+str(ypos+1))].temp
 		numTiles += 1
 	if int(xpos) + -1 < -5:
 		DifLeft = false
+		DifLeftNum = 0
 		temp = -22222
 	else:
 		DifLeft = true
+		DifLeftNum = get_parent().id_tile[int(str(xpos - 1)+str(ypos))].temp
 		numTiles += 1
 	if int(xpos) + 1 > 4:
 		DifRight = false
+		DifRightNum = 0
 		temp = -2222
 	else:
 		DifRight = true
+		DifRightNum = get_parent().id_tile[int(str(xpos + 1) + str(ypos))].temp
 		numTiles += 1
 
 
 func diffuse():
 	diffuseCheck()
-	id_tile = tile_spawner.id_tile
+	temp = (DifRightNum + DifDownNum + DifUpNum + DifLeftNum)/numTiles 
+
+func wait(seconds):
+	await get_tree().create_timer(seconds).timeout

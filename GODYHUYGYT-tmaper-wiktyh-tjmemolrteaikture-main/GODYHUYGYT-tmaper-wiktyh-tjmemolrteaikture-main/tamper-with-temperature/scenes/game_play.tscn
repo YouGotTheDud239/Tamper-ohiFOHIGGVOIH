@@ -8,9 +8,9 @@
 [ext_resource type="Texture2D" uid="uid://dywgvobdi2wch" path="res://assets/textures/Tile.png" id="6_coaa0"]
 [ext_resource type="Script" uid="uid://c7aaa2shs8yxf" path="res://scripts/Texts/TilePosDisp.gd" id="7_0daha"]
 [ext_resource type="Script" uid="uid://cu6iewnxew3ar" path="res://scripts/Texts/temp_disp.gd" id="8_x4ub6"]
-[ext_resource type="Script" uid="uid://bo7niuneoq414" path="res://scripts/Texts/Containfloor.gd" id="9_fm4b6"]
 [ext_resource type="Script" uid="uid://cdcjocbu1wqfg" path="res://scripts/Texts/creates.gd" id="10_5p4h6"]
 [ext_resource type="Script" uid="uid://5mxqik28q3j4" path="res://scripts/Texts/win_req.gd" id="10_k38ww"]
+[ext_resource type="Script" uid="uid://duywx5qagaaix" path="res://scripts/Texts/diffurjjjegenhhgweejshsghbbbbbboooongjgjgj.gd" id="10_yksfn"]
 [ext_resource type="Script" uid="uid://c1qvl1edweean" path="res://scripts/Texts/tileReq.gd" id="11_r1jqb"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_hm83i"]
@@ -129,7 +129,6 @@ z_index = 12
 layout_mode = 2
 size_flags_horizontal = 4
 text = "Tile Position:"
-script = ExtResource("9_fm4b6")
 
 [node name="Space3" type="Label" parent="Stats(actual)"]
 modulate = Color(0, 0, 0, 1)
@@ -157,6 +156,7 @@ z_index = 12
 layout_mode = 2
 size_flags_horizontal = 4
 text = "Tile Position:"
+script = ExtResource("10_yksfn")
 
 [node name="Space5" type="Label" parent="Stats(actual)"]
 modulate = Color(0, 0, 0, 1)

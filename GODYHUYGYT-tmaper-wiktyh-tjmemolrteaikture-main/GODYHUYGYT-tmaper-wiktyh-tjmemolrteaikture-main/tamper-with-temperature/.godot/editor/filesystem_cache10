@@ -1,0 +1,28 @@
+63f7b34db8d8cdea90c76aacccf841ec
+::res://::1766009547
+::res://assets/::1766009447
+::res://assets/resources/::1766009447
+tileRes.tres::Resource/tilesofclass::9133109903320630329::1766009447::0::1::::<><><>0<>0<><>::uid://c80dov0dq0jbk::::res://scripts/tile_res.gd
+::res://assets/textures/::1766009447
+BG1.png::CompressedTexture2D::1555436960496077686::1766009447::1766009564::1::::<><><>0<>0<>15214ef3e5784420a649f8900b44e494<>res://.godot/imported/BG1.png-5856794ab2fd60325601a692ca2ca57e.ctex::
+cursor.png::CompressedTexture2D::7991556958432946305::1766009447::1766009564::1::::<><><>0<>0<>cc32eee90ea29e3e0b68177b5127098d<>res://.godot/imported/cursor.png-f271a127bae41ae766f1b1b7bc6152fd.ctex::
+New Piskel-1.png.png::CompressedTexture2D::73484127744395906::1766009447::1766009564::1::::<><><>0<>0<>df6a111b1d7f7d216c46bdd657ab9c1f<>res://.godot/imported/New Piskel-1.png.png-f5de570a59cb8daf72eb69ce8294f94c.ctex::
+Tile.png::CompressedTexture2D::8889613149629787163::1766009447::1766009564::1::::<><><>0<>0<>48d15ea78d8a03028eb361d1eabd507b<>res://.godot/imported/Tile.png-c6a70d9b6e291d7f81a8001fad904654.ctex::
+Tilemap 3.png.png::CompressedTexture2D::1613496601228374002::1766009447::1766009564::1::::<><><>0<>0<>bb7981f9edc165de5f00654f46ee129f<>res://.godot/imported/Tilemap 3.png.png-6f30ba139b9465add18264ff5272040e.ctex::
+::res://scenes/::1766009447
+game_play.tscn::PackedScene::4901640255772114967::1766009447::0::1::::<><><>0<>0<><>::uid://5wdd6pgq5f8r::::res://scripts/game.gd<>uid://wfp24leh1ojm::::res://assets/textures/BG1.png<>uid://cq14kcvrkf7s2::::res://scripts/mouse_select.gd<>uid://dl4f1mrhbxy3b::::res://assets/textures/cursor.png<>uid://qdelashlwxme::::res://scenes/tile_spawner.tscn<>uid://dywgvobdi2wch::::res://assets/textures/Tile.png<>uid://c7aaa2shs8yxf::::res://scripts/Texts/TilePosDisp.gd<>uid://cu6iewnxew3ar::::res://scripts/Texts/temp_disp.gd<>uid://bo7niuneoq414::::res://scripts/Texts/Containfloor.gd<>uid://cdcjocbu1wqfg::::res://scripts/Texts/creates.gd<>uid://5mxqik28q3j4::::res://scripts/Texts/win_req.gd<>uid://c1qvl1edweean::::res://scripts/Texts/tileReq.gd
+tile.tscn::PackedScene::7237914252238504614::1766009447::0::1::::<><><>0<>0<><>::uid://d3ee8rrwx8ml2::::res://assets/resources/tileRes.tres<>uid://cm781s5tdjfi1::::res://scripts/tile.gd<>uid://bbujjoak12xy::::res://assets/textures/New Piskel-1.png.png
+tile_spawner.tscn::PackedScene::1129477171314836024::1766009447::0::1::::<><><>0<>0<><>::uid://c3bqd4vgl3cuw::::res://scripts/tile_spawn.gd
+::res://scripts/::1766009447
+game.gd::GDScript::2151270779781401335::1766009447::0::1::::<>Node<><>0<>0<><>::
+mouse_select.gd::GDScript::5951315476203143591::1766009447::0::1::::<>CharacterBody2D<><>0<>0<><>::
+tile.gd::GDScript::5683218663207401110::1766009447::0::1::::<>CharacterBody2D<><>0<>0<><>::
+tile_res.gd::GDScript::7140890945154877240::1766009447::0::1::::tilesofclass<>Resource<><>0<>0<><>::
+tile_spawn.gd::GDScript::6741171752177609430::1766009447::0::1::::<>Node2D<><>0<>0<><>::
+::res://scripts/Texts/::1766009447
+Containfloor.gd::GDScript::3435929260763244453::1766009447::0::1::::<>Label<><>0<>0<><>::
+creates.gd::GDScript::4988108215393826816::1766009447::0::1::::<>Label<><>0<>0<><>::
+temp_disp.gd::GDScript::6241108006287871889::1766009447::0::1::::<>Label<><>0<>0<><>::
+TilePosDisp.gd::GDScript::7018885810083599355::1766009447::0::1::::<>Label<><>0<>0<><>::
+tileReq.gd::GDScript::6632077418573239037::1766009447::0::1::::<>Label<><>0<>0<><>::
+win_req.gd::GDScript::2131863342632158255::1766009447::0::1::::<>Label<><>0<>0<><>::
